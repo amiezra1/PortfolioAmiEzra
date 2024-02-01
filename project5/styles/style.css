@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font: Heebo;
+}
+a {
+  text-decoration: none;
+  color: unset;
+}
+/* ID */
+#position img {
+  height: 50vh;
+  width: 100vw;
+}
+#name,
+#email {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  flex-direction: column;
+  background: #f6f6f6 0% 0% no-repeat padding-box;
+  border: 1px solid #d31c75;
+}
+/* Class */
+.dark-cube {
+  top: 10vh;
+  right: 15vw;
+  position: fixed;
+  width: 35vw;
+  background: #1a1a1ad4 0% 0% no-repeat padding-box;
+  display: block;
+  flex-direction: column;
+  color: #ffffff;
+  padding: 1rem 2rem;
+}
+.dark-cube h3 {
+  text-align: right;
+  font: 900 1.5rem Heebo;
+}
+.dark-cube p {
+  text-align: right;
+  font: 0.9rem Heebo;
+}
+
+.dark-cube .btn {
+  width: 25%;
+  height: 3rem;
+  background: #d31c75;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: normal normal bold 22px/30px Assistant;
+  margin: 10px 1px;
+}
+.for-fpadding {
+  padding: 0.8rem 0;
+}
+
+.show {
+  display: none;
+}
+@media (max-width: 658px) {
+  #position {
+    display: flex;
+    justify-content: center;
+  }
+  .dark-cube {
+    right: auto;
+    display: flex;
+    width: 90vw;
+    height: 80vh;
+  }
+  .dark-cube h3 {
+    text-align: center;
+    font: normal normal 900 25px/30px Heebo;
+  }
+  .dark-cube p {
+    text-align: center;
+    font: normal normal normal 15px/22px Heebo;
+  }
+  .show {
+    display: flex;
+  }
+}

@@ -1,0 +1,134 @@
+:root {
+  --color: #d3e10e;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font: normal normal bold 86px/113px Assistant;
+}
+a {
+  text-decoration: none;
+}
+
+/* ID */
+.show-pc {
+  content: "";
+  color: #fff;
+  background: url("../Assets/Path152.png") no-repeat center 100%;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#name,
+#email {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  background: #f6f6f6 0% 0% no-repeat padding-box;
+  border: none;
+  border-bottom: 5px solid var(--color);
+}
+#section-a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 250px;
+}
+
+/* Class */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.container h1 {
+  text-align: center;
+  font: normal normal bold 86px/113px Assistant;
+  letter-spacing: 0px;
+  color: var(--color);
+}
+.container p {
+  text-align: center;
+  font: normal normal normal 20px/26px Assistant;
+  letter-spacing: 0px;
+  color: #f9f9f9;
+}
+.personal-information {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+}
+.flacs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: right;
+  font: normal normal bold 16px/21px Assistant;
+  letter-spacing: 0px;
+  color: #011560;
+}
+.for-fpadding {
+  width: 100%;
+  padding: 10px;
+}
+.btn {
+  width: 25%;
+  height: 50px;
+  background: var(--color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #011560;
+  font: normal normal bold 22px/30px Assistant;
+  margin: 10px;
+}
+.show-mobile {
+  display: none;
+}
+@media (max-width: 658px) {
+  .container {
+    padding: 50px;
+  }
+  .personal-information {
+    display: flex;
+    flex-direction: column;
+  }
+  #section-a {
+    padding: 80px 42px;
+  }
+  .btn {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .container h1 {
+    font: normal normal bold 86px/113px Assistant;
+  }
+  .container p {
+    font: normal normal normal 20px/26px Assistant;
+  }
+  .show-mobile {
+    display: flex;
+  }
+  .show-mobile img {
+    display: flex;
+    width: 100vw;
+  }
+  .show-pc {
+    display: none;
+  }
+}
