@@ -62,19 +62,19 @@
         <div class="container-row bg-dark">
           <!-- Quality html5 -->
           <div class="fa-2x">
-            <img src="/Assets/Quality/html.png" />
+            <img src="/PortfolioAmiEzra/Assets/Quality/html.png" />
           </div>
           <!-- Quality css3 -->
           <div class="fa-2x">
-            <img src="/Assets/Quality/css.png" />
+            <img src="/PortfolioAmiEzra/Assets/Quality/css.png" />
           </div>
           <!-- Quality github -->
           <div class="fa-2x">
-            <img src="/Assets/Quality/js.png" />
+            <img src="/PortfolioAmiEzra/Assets/Quality/js.png" />
           </div>
           <!-- Quality github -->
           <div class="fa-2x">
-            <img src="/Assets/Quality/GitHub.png" />
+            <img src="/PortfolioAmiEzra/Assets/Quality/GitHub.png" />
           </div>
         </div>
         <!-- About: Myself -->
@@ -98,7 +98,7 @@
 
             <a
               class=".py-3 btn"
-              href="/Assets/CV Ami Ezra.pdf"
+              href="/PortfolioAmiEzra/Assets/CV Ami Ezra.pdf"
               download="CV Ami Ezra.pdf"
               ><i class="fa-solid fa-download"></i>Download CV</a
             >
@@ -116,7 +116,7 @@
           <div class="items">
             <!-- Image 1 -->
             <div class="item">
-              <a href="/presentation/presentation1.html">
+              <a href="/PortfolioAmiEzra/presentation/presentation1.html">
                 <div class="item-image">
                   <img src="Assets/ProjektsImg/1.png" alt="project one" />
                 </div>
@@ -133,7 +133,7 @@
             </div>
             <!-- Image 2 -->
             <div class="item">
-              <a href="/presentation/presentation2.html">
+              <a href="/PortfolioAmiEzra/presentation/presentation2.html">
                 <div class="item-image">
                   <img src="Assets/ProjektsImg/2.png" alt="project two" />
                 </div>
@@ -150,7 +150,7 @@
             </div>
             <!-- Image 3 -->
             <div class="item">
-              <a href="/presentation/presentation3.html">
+              <a href="/PortfolioAmiEzra/presentation/presentation3.html">
                 <div class="item-image">
                   <img src="Assets/ProjektsImg/3.png" />
                 </div>
@@ -167,7 +167,7 @@
             </div>
             <!-- Image 4 -->
             <div class="item">
-              <a href="/presentation/presentation4.html">
+              <a href="/PortfolioAmiEzra/presentation/presentation4.html">
                 <div class="item-image">
                   <img src="Assets/ProjektsImg/4.png" />
                 </div>
@@ -184,7 +184,7 @@
             </div>
             <!-- Image 5 -->
             <div class="item">
-              <a href="/presentation/presentation5.html">
+              <a href="/PortfolioAmiEzra/presentation/presentation5.html">
                 <div class="item-image">
                   <img src="Assets/ProjektsImg/5.png" />
                 </div>
@@ -201,7 +201,7 @@
             </div>
             <!-- Image 6 -->
             <div class="item">
-              <a href="/presentation/presentation6.html">
+              <a href="/PortfolioAmiEzra/presentation/presentation6.html">
                 <div class="item-image">
                   <img src="Assets/ProjektsImg/6.png" />
                 </div>
@@ -218,7 +218,7 @@
             </div>
             <!-- Image 7 -->
             <div class="item">
-              <a href="/presentation/presentation7.html">
+              <a href="/PortfolioAmiEzra/presentation/presentation7.html">
                 <div class="item-image">
                   <img src="Assets/ProjektsImg/7.png" />
                 </div>
@@ -235,7 +235,7 @@
             </div>
             <!-- Image 8 -->
             <div class="item mor">
-              <a href="/presentation/presentation8.html">
+              <a href="/PortfolioAmiEzra/presentation/presentation8.html">
                 <div class="item-image">
                   <img src="Assets/ProjektsImg/8.png" />
                 </div>
@@ -337,34 +337,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <script>
-      const navbar = document.getElementById("navbar");
-      let scrolled = false;
-
-      window.onscroll = function () {
-        if (window.pageYOffset > 100) {
-          navbar.classList.remove("top");
-        } else {
-          navbar.classList.add("top");
-          scrolled = false;
-        }
-      };
-
-      // Smooth Scrolling
-      $("#navbar a").on("click", function (e) {
-        if (this.hash !== "") {
-          e.preventDefault();
-
-          const hash = this.hash;
-
-          $("html, body").animate(
-            {
-              scrollTop: $(hash).offset().top - 70,
-            },
-            800
-          );
-        }
-      });
-    </script>
+    <script src="/PortfolioAmiEzra/script.js"></script>
   </body>
 </html>

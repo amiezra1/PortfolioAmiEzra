@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/PortfolioAmiEzra/CSS/all.min.css"
       integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
@@ -25,7 +25,7 @@
     <header id="home" class="hero">
       <!-- Navbar -->
       <div id="navbar" class="navbar menu-wrap top">
-        <a href="/index.html" class="logo">
+        <a href="/PortfolioAmiEzra/index.html" class="logo">
           <img
             src="../Assets/logo.png"
             alt="logo for web developer"
@@ -38,10 +38,10 @@
           <div>
             <div>
               <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/index.html">About</a></li>
-                <li><a href="/index.html">Gallery</a></li>
-                <li><a href="/index.html">Contact</a></li>
+                <li><a href="/PortfolioAmiEzra/index.html">Home</a></li>
+                <li><a href="/PortfolioAmiEzra/index.html">About</a></li>
+                <li><a href="/PortfolioAmiEzra/index.html">Gallery</a></li>
+                <li><a href="/PortfolioAmiEzra/index.html">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -70,19 +70,19 @@
         <div class="container-row bg-dark">
           <!-- Quality html5 -->
           <div class="fa-2x">
-            <img src="/Assets/Quality/html.png" />
+            <img src="/PortfolioAmiEzra/Assets/Quality/html.png" />
           </div>
           <!-- Quality css3 -->
           <div class="fa-2x">
-            <img src="/Assets/Quality/css.png" />
+            <img src="/PortfolioAmiEzra/Assets/Quality/css.png" />
           </div>
           <!-- Quality github -->
           <div class="fa-2x">
-            <img src="/Assets/Quality/js.png" />
+            <img src="/PortfolioAmiEzra/Assets/Quality/js.png" />
           </div>
           <!-- Quality github -->
           <div class="fa-2x">
-            <img src="/Assets/Quality/GitHub.png" />
+            <img src="/PortfolioAmiEzra/Assets/Quality/GitHub.png" />
           </div>
         </div>
       </section>
@@ -145,34 +145,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <script>
-      const navbar = document.getElementById("navbar");
-      let scrolled = false;
-
-      window.onscroll = function () {
-        if (window.pageYOffset > 100) {
-          navbar.classList.remove("top");
-        } else {
-          navbar.classList.add("top");
-          scrolled = false;
-        }
-      };
-
-      // Smooth Scrolling
-      $("#navbar a, .btn").on("click", function (e) {
-        if (this.hash !== "") {
-          e.preventDefault();
-
-          const hash = this.hash;
-
-          $("html, body").animate(
-            {
-              scrollTop: $(hash).offset().top - 70,
-            },
-            800
-          );
-        }
-      });
-    </script>
+    <script src="/PortfolioAmiEzra/script.js"></script>
   </body>
 </html>

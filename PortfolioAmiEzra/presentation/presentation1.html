@@ -10,7 +10,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="shortcut icon" type="image/x-icon" href="../Assets/ALogo.png" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../PortfolioAmiEzra/Assets/ALogo.png"
+    />
     <link rel="stylesheet" href="../CSS/style.css" />
     <link rel="stylesheet" href="../CSS/utilities.css" />
     <link
@@ -25,9 +29,9 @@
     <header id="home" class="hero">
       <!-- Navbar -->
       <div id="navbar" class="navbar menu-wrap top">
-        <a href="/index.html" class="logo">
+        <a href="/PortfolioAmiEzra/index.html" class="logo">
           <img
-            src="../Assets/logo.png"
+            src="/PortfolioAmiEzra/Assets/logo.png"
             alt="logo for web developer"
             class="logo-img"
           />
@@ -38,10 +42,10 @@
           <div>
             <div>
               <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/index.html">About</a></li>
-                <li><a href="/index.html">Gallery</a></li>
-                <li><a href="/index.html">Contact</a></li>
+                <li><a href="/PortfolioAmiEzra/index.html">Home</a></li>
+                <li><a href="/PortfolioAmiEzra/index.html">About</a></li>
+                <li><a href="/PortfolioAmiEzra/index.html">Gallery</a></li>
+                <li><a href="/PortfolioAmiEzra/index.html">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -57,7 +61,7 @@
         <p>It's My Project One</p>
         <div class="btn-white">
           <a
-            href="../project1/downloadProject1.zip"
+            href="/PortfolioAmiEzra/project1/downloadProject1.zip"
             download="downloadProject1.zip"
             >Download zip</a
           >
@@ -70,19 +74,19 @@
         <div class="container-row bg-dark">
           <!-- Quality html5 -->
           <div class="fa-2x">
-            <img src="/Assets/Quality/html.png" />
+            <img src="/PortfolioAmiEzra/Assets/Quality/html.png" />
           </div>
           <!-- Quality css3 -->
           <div class="fa-2x">
-            <img src="/Assets/Quality/css.png" />
+            <img src="/PortfolioAmiEzra/Assets/Quality/css.png" />
           </div>
           <!-- Quality github -->
           <div class="fa-2x">
-            <img src="/Assets/Quality/js.png" />
+            <img src="/PortfolioAmiEzra/Assets/Quality/js.png" />
           </div>
           <!-- Quality github -->
           <div class="fa-2x">
-            <img src="/Assets/Quality/GitHub.png" />
+            <img src="/PortfolioAmiEzra/Assets/Quality/GitHub.png" />
           </div>
         </div>
       </section>
@@ -98,7 +102,10 @@
             <div class="item">
               <a href="../project1/project1.html" target="_blank">
                 <div class="item-image">
-                  <img src="../Assets/ProjektsImg/1.png" alt="project one" />
+                  <img
+                    src="/PortfolioAmiEzra/Assets/ProjektsImg/1.png"
+                    alt="project one"
+                  />
                 </div>
                 <div class="item-text">
                   <div class="item-text-wrap">
@@ -144,35 +151,6 @@
       integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
       crossorigin="anonymous"
     ></script>
-
-    <script>
-      const navbar = document.getElementById("navbar");
-      let scrolled = false;
-
-      window.onscroll = function () {
-        if (window.pageYOffset > 100) {
-          navbar.classList.remove("top");
-        } else {
-          navbar.classList.add("top");
-          scrolled = false;
-        }
-      };
-
-      // Smooth Scrolling
-      $("#navbar a, .btn").on("click", function (e) {
-        if (this.hash !== "") {
-          e.preventDefault();
-
-          const hash = this.hash;
-
-          $("html, body").animate(
-            {
-              scrollTop: $(hash).offset().top - 70,
-            },
-            800
-          );
-        }
-      });
-    </script>
+    <script src="/PortfolioAmiEzra/script.js"></script>
   </body>
 </html>
