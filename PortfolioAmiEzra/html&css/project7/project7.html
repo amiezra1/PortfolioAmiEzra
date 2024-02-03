@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/c8391f8001.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="/PortfolioAmiEzra/Assets/ALogo.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>PROJECT7</title>
+  </head>
+  <body>
+    <!-- Page One (Intro) -->
+    <section id="page-1" class="page">
+      <h1>Welcom To My Presentation</h1>
+      <p>
+        HTML, CSS, and JavaScript are powerful technologies that are essential
+        to the modern web. They provide the structure, formatting, and
+        interactivity that are needed to create engaging and dynamic web
+        experiences, and are constantly evolving and being updated.
+      </p>
+      <div>
+        <a href="#page-2" class="btn">
+          Next Page <i class="fas fa-arrow-circle-down"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Page Twe  -->
+    <section id="page-2" class="page">
+      <h1>Page Twe - HTML</h1>
+      <p>
+        HTML, or Hypertext Markup Language, is a markup language that is used to
+        structure and organize content on the web. It defines the different
+        elements that make up a webpage, such as headings, paragraphs, and
+        links, and provides a basic structure for the content on a page. HTML
+        uses a system of tags and attributes to define the different elements on
+        a page and to provide metadata about those elements.
+      </p>
+      <div>
+        <a href="#page-1" class="btn btn-dark">
+          Prev Page <i class="fas fa-arrow-circle-up"></i>
+        </a>
+        <a href="#page-3" class="btn">
+          Next Page <i class="fas fa-arrow-circle-down"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Page Three -->
+    <section id="page-3" class="page">
+      <h1>Page Three - CSS</h1>
+      <p>
+        CSS, or Cascading Style Sheets, is a stylesheet language that is used to
+        control the appearance and formatting of the content on a webpage. It
+        allows developers to define the styles, colors, fonts, and layout of a
+        page, and to apply those styles consistently across multiple pages and
+        devices. CSS uses a combination of selectors and rules to apply styles
+        to the elements on a page and to create visual hierarchies and layouts
+        that are consistent across different devices and screen sizes.
+      </p>
+      <div>
+        <a href="#page-2" class="btn btn-dark">
+          Prev Page <i class="fas fa-arrow-circle-up"></i>
+        </a>
+        <a href="#page-4" class="btn">
+          Next Page <i class="fas fa-arrow-circle-down"></i>
+        </a>
+      </div>
+    </section>
+    <!-- Page Four -->
+    <section id="page-4" class="page">
+      <h1>Page Four- JavaScript</h1>
+      <p>
+        JavaScript is a powerful programming language that is used to add
+        interactivity and dynamic behavior to a webpage. It allows developers to
+        create user interfaces, handle user input, and manipulate the content on
+        a page in real-time. JavaScript code is executed by the web browser and
+        can interact with the HTML and CSS on a page to create complex and
+        interactive web experiences.
+      </p>
+      <div>
+        <a href="#page-3" class="btn btn-dark">
+          Prev Page <i class="fas fa-arrow-circle-up"></i>
+        </a>
+      </div>
+    </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(".btn").on("click", function (event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          const hash = this.hash;
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            800
+          );
+        }
+      });
+    </script>
+  </body>
+</html>

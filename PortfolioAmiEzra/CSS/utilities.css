@@ -1,17 +1,10 @@
 /* background */
 .bg-dark {
   background-color: var(--color-dark);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
 }
 .bg-light {
   background-color: var(--color-light);
-}
-.bg-sp {
-  background: var(--color-dark);
-  margin: 2rem;
-  padding: 2rem;
-  border-radius: 100px;
-  color: #fff;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
 }
 /* Botton */
 .btn {
